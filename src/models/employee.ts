@@ -1,7 +1,7 @@
 import mongoose, { ObjectId } from "mongoose";
 
 type Salutation = "Dr." | "Mr." | "Ms." | "Mrs." | "Mx.";
-type Gender = "Male" | "Female" | "Unspecified";
+type Gender = "male" | "female" | "unspecified";
 type ProfileColour = "Green" | "Red" | "Blue" | "Default";
 
 export interface EmployeeDocument extends mongoose.Document {
@@ -28,7 +28,7 @@ const employeeSchema = new mongoose.Schema<EmployeeDocument>({
   },
   gender: {
     type: String,
-    enum: ["Male", "Female", "Unspecified"],
+    enum: ["male", "female", "unspecified"],
     required: true,
   },
   employeeNo: { type: Number, required: true, unique: true },
