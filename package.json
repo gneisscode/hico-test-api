@@ -10,6 +10,10 @@
     "dev": "nodemon src/index.ts",
     "build": "tsc --project tsconfig.json && tsc-alias -p tsconfig.json"
   },
+  "engines": {
+  "node": ">=18.18.0 <19.0.0"
+  },
+  
   "license": "ISC",
   "devDependencies": {
     "@types/cors": "^2.8.14",
