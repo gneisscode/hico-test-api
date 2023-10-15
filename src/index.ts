@@ -8,7 +8,7 @@ import { employeeRoutes } from "@routes";
 
 dotenv.config();
 
-const app = express();
+export const app = express();
 
 app.use(cors());
 app.use(bodyParser.json({}));

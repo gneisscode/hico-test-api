@@ -2,8 +2,6 @@ import { Request, Response } from "express";
 import { Employee } from "@models";
 
 export class EmployeeController {
-
-
   static async test(req: Request, res: Response) {
     try {
       return res.status(200).json({
@@ -20,10 +18,8 @@ export class EmployeeController {
 
   static async addEmployee(req: Request, res: Response) {
     try {
-     
       const { employeeNo } = req.body;
 
- 
       const existingEmployee = await Employee.findOne({ employeeNo });
 
       if (existingEmployee) {
@@ -33,7 +29,6 @@ export class EmployeeController {
         });
       }
 
-  
       const employee = new Employee(req.body);
 
       await employee.save();
@@ -49,7 +44,6 @@ export class EmployeeController {
       });
     }
   }
-
 
   static async getEmployee(req: Request, res: Response) {
     try {
