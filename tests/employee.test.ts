@@ -21,6 +21,9 @@ describe("EmployeeController Tests", () => {
   });
 
     describe("addEmployee", () => {
+      
+      //this should fail after running tests the first time since employee will be added to DB
+
       it("should add a new employee and return a 200 response", async () => {
         const employeeData = {
           firstName: "Shalom",
@@ -41,6 +44,8 @@ describe("EmployeeController Tests", () => {
         expect(res.body).to.have.property("data");
         expect(res.body).to.have.property("message", "Employee record added.");
       });
+
+      //this will pass second time around since user above has been added
 
       it("should return a 400 response if the employee number is already in use", async () => {
         const employeeData = {
