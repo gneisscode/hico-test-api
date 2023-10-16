@@ -84,7 +84,7 @@ The employeeRoutes module defines the API routes for interacting with employee d
 
 ### Routes Overview
 
-1. GET /
+1. **GET /**
 
 - Endpoint: /
 - Method: GET
@@ -92,7 +92,7 @@ The employeeRoutes module defines the API routes for interacting with employee d
 - Controller Method: EmployeeController.test
 
 
-2. POST /employee
+2. **POST /employee**
 
 - Endpoint: /employee
 - Method: POST
@@ -100,28 +100,28 @@ The employeeRoutes module defines the API routes for interacting with employee d
 - Controller Method: EmployeeController.addEmployee
 
 
-3. GET /employee/:id
+3. **GET /employee/:id**
 
 - Endpoint: /employee/:id
 - Method: GET
 - Description: Retrieves details of a specific employee based on the provided ID.
 - Controller Method: EmployeeController.getEmployee
 
-4. GET /employee
+4.** GET /employee**
 
 - Endpoint: /employee
 - Method: GET
 - Description: Retrieves a list of all employees.
 - Controller Method: EmployeeController.getEmployees
 
-5. PUT /employee
+5. **PUT /employee**
 
 - Endpoint: /employee
 - Method: PUT
 - Description: Updates details of an existing employee.
 - Controller Method: EmployeeController.updateEmployee
 
-6. DELETE /employee/:id
+6. **DELETE /employee/:id**
 
 - Endpoint: /employee/:id
 - Method: DELETE
@@ -192,6 +192,8 @@ To run the development server, run the following command in your terminal
 npm start
 
 ```
+
+## Contributing
 
 Feel free to explore the codebase, and if you have any questions or suggestions, please don't hesitate to reach out. Happy coding!
 
