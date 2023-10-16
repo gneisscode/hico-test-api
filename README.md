@@ -107,7 +107,7 @@ The employeeRoutes module defines the API routes for interacting with employee d
 - Description: Retrieves details of a specific employee based on the provided ID.
 - Controller Method: EmployeeController.getEmployee
 
-4.** GET /employee**
+4. **GET /employee**
 
 - Endpoint: /employee
 - Method: GET
