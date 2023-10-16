@@ -20,6 +20,8 @@ export class EmployeeController {
     try {
       const { employeeNo } = req.body;
 
+      //checks if employeeNo is taken
+
       const existingEmployee = await Employee.findOne({ employeeNo });
 
       if (existingEmployee) {
@@ -104,6 +106,8 @@ export class EmployeeController {
         profileColour,
       } = req.body;
 
+      //remove id from body before updating
+
       const update = {
         firstName,
         lastName,
@@ -137,6 +141,8 @@ export class EmployeeController {
       });
     }
   }
+
+  //for future use in the case of a delete functionality
 
   static async deleteEmployee(req: Request, res: Response) {
     try {
